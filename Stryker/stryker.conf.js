@@ -1,4 +1,4 @@
-module.exports = function (config) {
+module.exports = function(config) {
   config.set({
     mutator: "javascript",
     packageManager: "npm",
@@ -12,7 +12,12 @@ module.exports = function (config) {
       config: {}
     },
     mutate: ["accumulator.js"],
-    tsconfigFile: "tsconfig.json",
+    jasmineConfigFile: "spec/support/jasmine.json",
     maxConcurrentTestRunners: 1
   });
+  /*
+var realFs = require('fs')
+var gracefulFs = require('graceful-fs')
+gracefulFs.gracefulify(realFs)
+  */
 };
