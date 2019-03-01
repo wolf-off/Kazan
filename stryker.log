@@ -1,0 +1,7 @@
+17:31:17 (12968) INFO ConfigReader Using stryker.conf.js in the current working directory.
+17:31:17 (12968) DEBUG BroadcastReporter Broadcasting to reporters ["clear-text","progress"]
+17:31:17 (12968) DEBUG ConfigReader Loading config stryker.conf.js
+17:31:17 (12968) DEBUG PluginLoader Loading stryker-* from C:\REPOS\Kazan\Stryker\node_modules
+17:31:17 (12968) DEBUG PluginLoader Expression stryker-* not resulted in plugins to load
+17:31:17 (12968) DEBUG PluginLoader Loading plugins C:\REPOS\Kazan\Stryker\node_modules\stryker\src\reporters\index.js
+17:31:17 (12968) DEBUG PluginLoader Loading plugins C:\REPOS\Kazan\Stryker\node_modules\stryker\src\mutators\index.js
