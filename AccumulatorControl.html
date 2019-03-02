@@ -1,0 +1,42 @@
+<script>
+    class AccumulatorControl extends diObjectMixin(HTMLElement) {
+        constructor() {
+            super();
+
+            var accumulator = new Accumulator();
+            var log=null;
+
+            this.dependencies = ['log-control'];
+            this.typeName = 'accumulator-control';
+            this.diReady = (logControl) => {
+                log = logControl;
+                return this;
+            }
+
+            var root = this.attachShadow({ mode: 'open' })
+            root.innerHTML = `
+            <h2>Value</h2>
+            <h2 id='sum'></h2>
+            <button id='add'>Add</button>
+            <button id='sub'>Remove</button>
+            <div>
+                <h4>Step value</h4>
+                <input id='step' type="number" value="1" />
+            </div>`;
+
+            root.getElementById('add').onclick = function () {
+                var inValue = parseInt(root.getElementById('step').value);
+                accumulator.add(inValue);
+                root.getElementById('sum').innerHTML = accumulator.value;
+                log.log('Add');
+            }
+            root.getElementById('sub').onclick = function () {
+                var inValue = parseInt(root.getElementById('step').value);
+                accumulator.sub(inValue);
+                root.getElementById('sum').innerHTML = accumulator.value;
+                log.log('Sub');
+            }
+        }
+    }
+    window.customElements.define('accumulator-control', AccumulatorControl);
+</script>
