@@ -12,7 +12,7 @@
         }
         document.sub = function () {
             var inValue = parseInt(document.getElementById('step').value);
-            document.accumulator.remove(inValue);
+            document.accumulator.sub(inValue);
             document.getElementById('sum').innerHTML = document.accumulator.value;
         }
     }

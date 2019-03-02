@@ -4,17 +4,17 @@
   "description": "",
   "main": "accumulator.js",
   "dependencies": {
-    "@stryker-mutator/core": "^1.0.3",
     "jasmine": "^3.3.1",
     "karma": "^4.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.2",
     "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-edge-launcher": "^0.4.2",
     "karma-jasmine": "^2.0.1",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "stryker-cli": "^1.0.0"
+    "karma-phantomjs-launcher": "^1.0.4"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^1.0.3",
     "stryker": "^0.35.1",
     "stryker-api": "^0.24.1",
     "stryker-jasmine": "^0.12.1",

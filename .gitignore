@@ -1,3 +1,6 @@
 Stryker/stryker.log
 Stryker/coverage/
 Stryker/node_modules/
+.stryker-tmp/
+coverage/
+node_modules/

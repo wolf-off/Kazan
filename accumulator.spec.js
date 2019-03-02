@@ -6,7 +6,7 @@ describe('Accumulator', function () {
         target = new Accumulator();
     });
 
-    it('add value', function () {                
+    it('add value', function () {
         target.add(2);
         expect(target.value).toEqual(2);
     });
